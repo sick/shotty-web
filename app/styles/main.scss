@@ -1,7 +1,6 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 @import 'sass-bootstrap/lib/bootstrap';
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 
 .browsehappy {
     margin: 0.2em 0;
@@ -12,20 +11,64 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 /* Space out content a bit */
 body {
-    font-family: 'Lato', Arial, sans-serif !important;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-image: url(images/notebook.png);
+    /*font-family: 'Lato', Arial, sans-serif;*/
+    font-family: 'PT Serif', serif;
+    -webkit-font-smoothing: antialiased;
+    /*padding-bottom: 20px;*/
+    /*background-image: url(../images/vertical_cloth.png);*/
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6, .navbar .nav > li {
-  font-family: 'Open Sans', Calibri, Arial, sans-serif !important;
-  text-transform: none !important;
+hr {
+    border: none;
+}
+
+body h1 {
+  font-family: 'Source Sans Pro', serif;
+}
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  color: #333;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.space {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+h1 {
+    color: #000;
+    text-shadow: 0 0 1px #000;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 13px;
+    text-transform: uppercase;
+    line-height: 50px;
+}
+
+
+p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    /*color: #8b8b8b;*/
+}
+
+.footer p {
+    /*color: #f0f0f0;*/
+    /*color: rgba(244,244,244,0.65);*/
+    font-family: "Bookman Old Style", Bookman, Garamond, serif;
+    /*line-height: 60px;*/
+    z-index: -1;
+
+    font-size: 10px;
+    padding-top: 10px;
+    /*display: inline-block;*/
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 
 
@@ -54,7 +97,7 @@ h6, .navbar .nav > li {
 /* Custom page footer */
 .footer {
     text-align: center;
-    padding-top: 19px;
+    /*padding-top: 19px;*/
     color: #777;
 }
 
@@ -85,7 +128,7 @@ h6, .navbar .nav > li {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 730px;
+        max-width: 1200px;
     }
 
     /* Remove the padding we set earlier */
